@@ -1,3 +1,26 @@
+/****
+Colors:
+https://coolors.co/palette/573c27-a98360-fdeed9-ffadc6-e34989
+
+*/
+
+[data-theme='cookies'] {
+    --color-primary: #a98360;
+    --color-pink: #ffadc6;
+    --color-dark: #e34989;
+    --color-brown: #573c27;
+    --color-cream: #fdeed9;
+
+}
+
+
+/****** Hero ******/
+/****** Hero ******/
+/****** Hero ******/
+
+body {
+    background: var(--color-cream);
+}
 .hero-mesh {
     background: url("https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltcf8370ba0b3162f8/6790184458fb6d84f38112bc/cookie-types-hero-assorted-cookies.jpeg");
     background-position: center;
