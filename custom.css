@@ -26,3 +26,28 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+.hero-title {
+    Color:var(--color-dark)
+}
+
+.hero-support {
+    Color:var(--color-pink)
+}
+
+/*******NavBar*******/
+/*******NavBar*******/
+/*******NavBar*******/
+
+.site-nav-brand {
+    color: var(--color-pink);
+}
+
+.site-nav-inner {
+    color: var(--color-pink);
+}
+
+.is-nav-ready .site-nav.is-stuck {
+    background: color-mix(in oklab, var(--color-brown) 88%, transparent);
+    backdrop-filter: blur(10px);
+}
