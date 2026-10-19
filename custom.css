@@ -13,6 +13,14 @@ https://coolors.co/palette/573c27-a98360-fdeed9-ffadc6-e34989
 
 }
 
+body, div, p {
+    font-family: "Sniglet", system-ui;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DynaPuff", system-ui;
+}
 
 /****** Hero ******/
 /****** Hero ******/
