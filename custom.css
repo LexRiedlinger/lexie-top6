@@ -13,12 +13,19 @@ https://coolors.co/palette/573c27-a98360-fdeed9-ffadc6-e34989
 
 }
 
-body, div, p {
+body,
+div,
+p {
     font-family: "Sniglet", system-ui;
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "DynaPuff", system-ui;
 }
 
@@ -29,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     background: var(--color-cream);
 }
+
 .hero-mesh {
     background: url("https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltcf8370ba0b3162f8/6790184458fb6d84f38112bc/cookie-types-hero-assorted-cookies.jpeg");
     background-position: center;
@@ -36,11 +44,23 @@ body {
 }
 
 .hero-title {
-    Color:var(--color-dark)
+    Color: var(--color-dark)
 }
 
 .hero-support {
-    Color:var(--color-pink);
+    color: var(--color-pink);
+    background-color: color-mix(in oklab, var(--color-brown) 85%, transparent);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+.hero-mark {
+    /* Removes any default background highlight */
+    background: transparent;
+
+    /* Adds a clean text shadow matching your theme */
+    text-shadow: 2px 2px 4px var(--color-brown);
 }
 
 /*******NavBar*******/
@@ -72,11 +92,74 @@ body {
     padding-right: 6rem !important;
 }
 
+.rank {
+    color: var(--color-pink)
+}
+
+.entry-title {
+    color: #573c27;
+}
+
+.entry-note {
+    color: #573c27
+}
+
 
 /*****Slider*****/
 /*****Slider*****/
 /*****Slider*****/
 
-.slider{
+.slider {
     background-color: var(--color-cream);
+}
+
+.section-title {
+    Color: var(--color-dark);
+    text-align: center;
+}
+
+.section-support {
+    Color: var(--color-brown);
+}
+
+.method {
+    background: (var(--color-cream));
+}
+
+.method-h {
+    color: #ffadc6;
+}
+
+.eyebrow {
+    color: #ffadc6;
+}
+
+/* 1. Lock the slider/carousel container height */
+.slider,
+.carousel {
+    height: 400px;
+    /* Set a fixed height for the entire slider area */
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 2. Lock each slide to match the container exactly and stop shrinking/growing */
+.slider .slide,
+.carousel-item {
+    height: 100%;
+    width: 100%;
+    flex: 0 0 100%;
+    /* Fixes width to 100% and prevents shrinking */
+    flex-shrink: 0;
+}
+
+/* 3. Force all images to fill the locked frame without shifting layout */
+.slider img,
+.carousel img,
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Clips image edges neatly so dimensions never distort */
+    display: block;
 }
