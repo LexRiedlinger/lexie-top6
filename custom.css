@@ -67,6 +67,8 @@ body {
 /*******NavBar*******/
 /*******NavBar*******/
 
+
+
 .site-nav-brand {
     color: var(--color-pink);
 }
@@ -75,6 +77,12 @@ body {
     color: var(--color-pink);
 }
 
+/* AT THE TOP */
+.is-nav-ready .site-nav:not(.is-stuck) {
+	background: var(--color-brown);
+	border-bottom-color: transparent;
+}
+/* ONCE YOU SCROLL DOWN */
 .is-nav-ready .site-nav.is-stuck {
     background: color-mix(in oklab, var(--color-brown) 88%, transparent);
     backdrop-filter: blur(10px);
@@ -104,6 +112,10 @@ body {
     color: #573c27
 }
 
+/* HOVER COLOR ON COUNT DOWN */
+.entry-card:hover .rank {
+  color: var(--color-dark);
+}
 
 /*****Slider*****/
 /*****Slider*****/
@@ -115,7 +127,7 @@ body {
 
 .section-title {
     Color: var(--color-dark);
-    text-align: center;
+
 }
 
 .section-support {
@@ -132,6 +144,10 @@ body {
 
 .eyebrow {
     color: #ffadc6;
+}
+
+#slider .section-title {
+  text-align: center;
 }
 
 /* 1. Lock the slider/carousel container height */
